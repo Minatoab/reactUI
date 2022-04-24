@@ -1,15 +1,23 @@
-import './App.css'
-import React from 'react'
-import { CssBaseline } from '@material-ui/core'
-import Nav from './nav'
-function App() {
-  return (
-    <div className='App'>
-      <CssBaseline />
+import "./App.css";
+import React from "react";
+import { Container, CssBaseline } from "@material-ui/core";
+import Nav from "./nav";
+import GridLayout from "./gridLayout";
 
-      <Nav />
-    </div>
-  )
+function App() {
+	return (
+		<div className='App'>
+			<CssBaseline />
+			<Nav />
+			<Container>
+				<main>
+					
+
+					<GridLayout />
+				</main>
+			</Container>
+		</div>
+	);
 }
 
-export default App
+export default App;

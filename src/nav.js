@@ -7,20 +7,29 @@ import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
+	siteTitle: {
+		fontWeight: "bold",
+		letterSpacing: 2.5,
+	},
 	menuBox: {
 		display: "flex",
 		flexDirection: "column",
-
 		[theme.breakpoints.up("md")]: {
-			color: "red",
+			paddingLeft: theme.spacing(5),
 			flexDirection: "row",
 		},
 	},
 	menuOption: {
 		padding: theme.spacing(1),
+	},
+	toolBar: {
+		display: "flex",
+		flexDirection: "column",
 		[theme.breakpoints.up("md")]: {
-			color: "red",
-			paddingLeft: theme.spacing(5),
+			flexDirection: "row",
+			color: "green",
+			alignItems: "flex-end",
+			justifyContent: "space-between",
 		},
 	},
 }));
@@ -29,8 +38,10 @@ export default function Nav() {
 	const classes = useStyles();
 	return (
 		<Container>
-			<Toolbar>
-				<Typographie>Mamouth Interactive</Typographie>
+			<Toolbar className={classes.toolBar}>
+				<Typographie variant='h4' className={classes.siteTitle}>
+					Mamouth Interactive
+				</Typographie>
 				<Box className={classes.menuBox}>
 					{["home", "about", "contact"].map((item) => (
 						<Link
