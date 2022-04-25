@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
 		color: "white",
 		fontSize: "bold",
 		backgroundSize: "cover",
-		backgroundImage: "url(http://localhost:3000/images/back.jpg)",
+		backgroundImage: "url(https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_960_720.jpg)",
 	},
 	mainItem: {
 		padding: theme.spacing(6),

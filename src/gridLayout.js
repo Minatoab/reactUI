@@ -32,29 +32,36 @@ export default function GridLayout() {
 				<MainGridItem title='Dog' />
 			</Grid>
 
-			<Grid item sm={4} xs={4}>
+			<Grid item lg={4} md={6} sm={12} xs={12}>
 				<GridItem title='Dog' img='http://localhost:3000/images/dog.webp' />
 			</Grid>
 
-			<Grid item sm={4} xs={4}>
+			<Grid item lg={4} md={6} sm={12} xs={12}>
 				<GridItem
-					title='Monkey'
-					img='http://localhost:3000/images/monkey.webp'
+					title='Bird'
+					img='https://cdn.pixabay.com/photo/2017/02/07/16/47/kingfisher-2046453_960_720.jpg'
 				/>
 			</Grid>
-			<Grid item sm={4} xs={4}>
+			<Grid item lg={4} md={6} sm={12} xs={12}>
 				<GridItem
 					title='Dolphin'
-					img='http://localhost:3000/images/dolphinNulla qui velit duis proident..webp'
+					img='http://localhost:3000/images/dolphin.webp'
 				/>
 			</Grid>
 
-			<Grid item sm={4} xs={4}>
-				<GridItem title='Dog' />
+			<Grid item  lg={4} md={6} sm={12} xs={12}>
+				<GridItem title='Tiger' img='https://cdn.pixabay.com/photo/2018/03/26/20/49/tiger-3264048_960_720.jpg' />
 			</Grid>
-			<Grid item sm={4} xs={4}>
-				<GridItem title='Dog' />
+			<Grid item lg={4} md={6} sm={12} xs={12}>
+				<GridItem title='Fox'
+				img='https://cdn.pixabay.com/photo/2016/03/27/22/22/fox-1284512_960_720.jpg' />
 			</Grid>
+			<Grid item lg={4} md={6} sm={12} xs={12}>
+				<GridItem title='Turtle'
+				img='https://cdn.pixabay.com/photo/2017/05/31/18/38/sea-2361247_960_720.jpg' />
+			</Grid>
+
+
 		</Grid>
 	);
 }

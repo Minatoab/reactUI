@@ -14,6 +14,8 @@ import ArrowForward from "@material-ui/icons/ArrowForward";
 const useStyles = makeStyles((theme) => ({
 	cardImage: {
 		height: 300,
+		
+		paddingTop: '75%'
 	},
 }));
 export default function GridItem(props) {
